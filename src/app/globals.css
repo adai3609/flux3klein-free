@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink font-sans text-slate-100 antialiased;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+}
+
+@layer utilities {
+  .text-aurora {
+    background-image: linear-gradient(90deg, #22d3ee 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .card {
+    @apply rounded-2xl border border-line bg-surface;
+  }
+
+  .card-hover {
+    @apply transition duration-200 hover:-translate-y-0.5 hover:border-neon-violet/50 hover:shadow-glow-cyan;
+  }
+
+  .prose-site p {
+    @apply mb-4 leading-relaxed text-mist;
+  }
+
+  .prose-site h2 {
+    @apply mt-10 mb-4 text-2xl font-bold tracking-tight text-white;
+  }
+
+  .prose-site h3 {
+    @apply mt-6 mb-2 text-lg font-semibold text-white;
+  }
+
+  .prose-site ol {
+    @apply mb-4 list-decimal space-y-2 pl-6 text-mist;
+  }
+
+  .prose-site ul {
+    @apply mb-4 list-disc space-y-2 pl-6 text-mist;
+  }
+
+  .prose-site a {
+    @apply text-neon-cyan underline decoration-neon-cyan/40 underline-offset-4 hover:decoration-neon-cyan;
+  }
+}

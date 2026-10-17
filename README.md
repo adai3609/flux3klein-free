@@ -23,13 +23,12 @@ pnpm dev        # local dev
 1. Push to GitHub, import in Vercel.
 2. Set `NEXT_PUBLIC_SITE_URL` to the production domain. Rebuild.
 
-## IMPORTANT — before going live
+## Generator embed
 
-`src/data/embed.ts` holds the Hugging Face Space embed URL with a
-`REPLACE_WITH_ACTUAL_SPACE` placeholder. Verify the official FLUX 3 Klein
-Space URL from the [Black Forest Labs org page](https://huggingface.co/Black-Forest-Labs)
-and paste it in. The embed renders an honest "not configured" notice until
-then — it never shows a broken frame.
+`src/data/embed.ts` points at Black Forest Labs' official demo Space via the
+direct `*.hf.space` subdomain (verified 2026-10-17 — the huggingface.co page
+URL sends X-Frame-Options and cannot be framed). If the demo ever stops
+loading, check the Space on the model page and update `spaceUrl`.
 
 ## Where things live
 

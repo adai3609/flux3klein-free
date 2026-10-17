@@ -1,13 +1,14 @@
 /**
  * Embedded generator configuration.
  *
- * VERIFY BEFORE DEPLOY: confirm the official FLUX 3 Klein Hugging Face Space
- * URL from Black Forest Labs' announcement or the model page on Hugging Face
- * (https://huggingface.co/Black-Forest-Labs), then paste the full
- * space subdomain below. The iframe only renders user-initiated loads.
+ * Verified 2026-10-17: this is Black Forest Labs' official FLUX 3 Klein Space
+ * (https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein).
+ * Iframes must use the *.hf.space direct subdomain — the huggingface.co page
+ * URL sends X-Frame-Options and cannot be framed. If the demo ever breaks,
+ * check the Space status on the model page and swap the URL below.
  */
 export const embedConfig = {
-  spaceUrl: 'https://huggingface.co/spaces/Black-Forest-Labs/REPLACE_WITH_ACTUAL_SPACE',
-  modelPageUrl: 'https://huggingface.co/Black-Forest-Labs',
+  spaceUrl: 'https://black-forest-labs-flux-3-image-klein.hf.space',
+  modelPageUrl: 'https://huggingface.co/black-forest-labs/flux-3-image-klein',
   height: 720,
 } as const;

@@ -17,7 +17,7 @@ export function GeneratorEmbed() {
   return (
     <div id="generator" className="card overflow-hidden">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line/60 bg-surface-raised px-5 py-3">
-        <p className="text-sm font-bold text-white">FLUX 3 Klein — community demo</p>
+        <p className="text-sm font-bold text-white">FLUX 3 Klein — official demo</p>
         <a
           href={embedConfig.spaceUrl}
           target="_blank"
@@ -67,8 +67,8 @@ export function GeneratorEmbed() {
             Start generating
           </button>
           <p className="max-w-sm text-xs leading-relaxed text-mist">
-            Loads the official community demo right here. Free, no signup — queue times depend
-            on demo traffic.
+            Loads Black Forest Labs' official demo right here. Free, no signup — queue times
+            depend on demo traffic.
           </p>
         </div>
       )}

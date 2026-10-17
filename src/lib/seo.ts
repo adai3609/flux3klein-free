@@ -30,11 +30,13 @@ export function pageMetadata({ title, description, path }: PageMetaOptions): Met
       url,
       siteName: siteConfig.name,
       type: 'website',
+      images: [{ url: '/og.png', width: 1200, height: 630, alt: siteConfig.name }],
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title,
       description,
+      images: ['/og.png'],
     },
   };
 }

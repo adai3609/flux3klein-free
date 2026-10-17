@@ -1,0 +1,26 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f1a"/>
+      <stop offset="1" stop-color="#101a33"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="90" r="370" fill="url(#glow1)"/>
+  <circle cx="100" cy="590" r="330" fill="url(#glow2)"/>
+  <text x="90" y="170" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#7c8db0" letter-spacing="8">BLACK FOREST LABS · OPEN WEIGHTS · 5.6B</text>
+  <text x="84" y="300" font-family="Helvetica, Arial, sans-serif" font-size="96" font-weight="900" fill="#ffffff">FLUX 3 KLEIN</text>
+  <rect x="90" y="340" width="290" height="66" rx="33" fill="#22d3ee"/>
+  <text x="126" y="384" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#0b0f1a">FREE</text>
+  <text x="90" y="475" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#e2e8f0">Generate images online — right in your browser.</text>
+  <text x="90" y="525" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#7c8db0">Official demo embedded · Prompt gallery · Local setup guide</text>
+  <text x="90" y="585" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#22d3ee">flux3kleinfree.com · no signup required</text>
+</svg>

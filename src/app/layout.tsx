@@ -6,6 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  verification: { google: 'google7e546d6ee66352c8' },
   title: 'FLUX 3 Klein Free — Generate Images Online, No Signup',
   description: siteConfig.description,
   alternates: { canonical: '/' },
